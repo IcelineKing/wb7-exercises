@@ -1,9 +1,10 @@
-"use strict";
+"use strict"
+
 
 console.log("mealsInCategory");
 
-//www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
-const apiBaseUrl = "https://www.themealdb.com/api/json/v1/1/filter.php?c=";
+//https://jsonplaceholder.typicode.com/todos/1
+const apiBaseUrl = "https://jsonplaceholder.typicode.com/todos/1";
 
 window.onload = function () {
   const getResultsButton = document.getElementById("getResultsButton");
