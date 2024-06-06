@@ -10,6 +10,8 @@ const cities = [
   { name: "Las Vegas, NV", latitude: 36.1714, longitude: -115.1544 },
 ];
 
+32.6732, -97.4606;
+
 // let cities = city[0];
 
 // console.log(city)
@@ -17,18 +19,6 @@ const cities = [
 const citiesInput = document.getElementById("citiesInput");
 
 window.onload = () => {
-  //   const selectCities = document.createElement("select");
-  //   selectCities.className = "form form-control";
-  //   for (let city of cities) {
-  //     const citiesOption = document.createElement("option");
-  //     citiesOption.textContent = city.name;
-  //     citiesOption.value = city.name;
-  //     selectCities.appendChild(citiesOption);
-  //   }
-  createCitiesSelect();
-};
-
-function createCitiesSelect() {
   const selectCities = document.createElement("select");
   selectCities.className = "form form-control";
   for (let city of cities) {
@@ -36,15 +26,24 @@ function createCitiesSelect() {
     citiesOption.textContent = city.name;
     citiesOption.value = city.name;
     selectCities.appendChild(citiesOption);
+    citiesInput.appendChild(selectCities);
+    let x = 32.6791;
+    let y = -97.4641;
+    citiesData(x, y);
   }
-}
 
-citiesInput.appendChild(selectCities);
+  //   createCitiesSelect();
+};
 
-// function citiesArray(name, latitude, longitude) {
+// function createCitiesSelect() {
+//   const selectCities = document.createElement("select");
+//   selectCities.className = "form form-control";
+//   for (let city of cities) {
+//     const citiesOption = document.createElement("option");
+//     citiesOption.textContent = city.name;
+//     citiesOption.value = city.name;
+//     selectCities.appendChild(citiesOption);
+//   }
+// }
 
 //
-
-//     const getResultsButton = document.getElementById("getResultsButton");
-//     getResultsButton.onclick = onGetResultsButtonClick;
-//   }
